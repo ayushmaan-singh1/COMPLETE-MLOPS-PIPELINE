@@ -91,7 +91,7 @@ def main(text_column='text', target_column='target'):
         train_processed_data = preprocess_df(train_data, text_column, target_column)
         test_processed_data = preprocess_df(test_data, text_column, target_column)
 
-        # Store the data inside data/processed
+        # Store the data inside data/interim
         data_path = os.path.join("./data", "interim")
         os.makedirs(data_path, exist_ok=True)
         
